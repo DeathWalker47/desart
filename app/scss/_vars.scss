@@ -1,0 +1,54 @@
+
+$default: #757575;
+$title: #222222;
+$accent: #FF7062;
+$accent-hover: #ff4836;
+$white: #FFFFFF;
+$gray: #CCCCCC;
+$light-gray: #F7F7F7;
+
+
+
+
+%mulish-700{
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+%mulish-600{
+  font-family: 'Mulish', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+%mulish-400{
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+%raleway-600{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+%raleway-400{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+%btn{
+  border: none;
+  background-color: $accent;
+  padding: 15px 50px;
+  color: $white;
+  cursor: pointer;
+  transition: all .3s linear;
+  &:hover{
+    background-color: $accent-hover;
+  }
+}

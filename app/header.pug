@@ -1,0 +1,19 @@
+
+- var menuValue = ["Главная", "О нас", "Услуги", "Команда", "Контакты"]
+
+
+header.header
+  .header__inner
+    a.logo(href="#")
+      img(src="images/logo.png", alt="logo")
+    .container.header__container 
+      nav.menu
+        ul.menu__list 
+          each item in menuValue
+            li.menu__item
+              a.menu__link(href="#") #{item} 
+    button.header__btn
+
+
+
+  

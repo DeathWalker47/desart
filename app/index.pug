@@ -1,7 +1,20 @@
+
+
 extends base
 
-block content 
+block content
+  .wrapper 
+    include header
+    include top
+    include about
+    include benefits
+    include newsletter
+    include services
+    include offer
+    include contact
+    include talk
+    include footer
 
-  include header
-  .block Ghbdtn
+  script(src="https://api-maps.yandex.ru/2.1/?apikey=261b9a65-edba-49ff-845d-999d0e37f0bf&lang=ru_RU")
+  script(src="js/main.min.js")
   

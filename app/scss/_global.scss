@@ -1,0 +1,85 @@
+
+
+body,
+html{
+  height: 100%;
+}
+body{
+  @extend %mulish-400;
+  font-size: 17px;
+  line-height: 30px;
+  color: $default;
+  background-color: $white;
+  position: relative;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.main{
+  flex-grow: 1;
+}
+
+.container{
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.subtitle{
+  color: $accent;
+  font-size: 14px;
+  line-height: 18px;
+  @extend %mulish-600;
+  margin-bottom: 20px;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    top: -36px;
+    left: -35px;
+    width: 54px;
+    z-index: -1;
+    height: 108px;
+    background-image: url('../images/sub.png');
+  }
+}
+
+.title{
+  color: $title;
+  font-size: 36px;
+  line-height: 42px;
+  @extend %raleway-400;
+}
+
+.read{
+  color: $accent;
+  @extend %mulish-600;
+  position: relative;
+  transition: all .3s linear;
+  &:hover{
+    color: $accent-hover;
+    &::before{
+      right: -30px;
+    }
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('../images/read-def.png');
+    width: 12px;
+    height: 5px;
+    transition: all .3s linear;
+  }
+}
+
+.box-title{
+  text-align: center;
+}

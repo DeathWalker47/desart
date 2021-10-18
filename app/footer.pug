@@ -1,20 +1,20 @@
 footer.footer
   .container 
-    .footer__top 
-      a.logo(href="#")
+    .footer__top(data-aos="fade-down") 
+      a.logo(href="#top")
         img(src="images/logo-min.png", alt="logo")
       ul.menu__list 
         li.menu__item
-          a.menu__link(href='#') Главная
+          a.menu__link(href='#top') Главная
         li.menu__item
-          a.menu__link(href='#') О нас
+          a.menu__link(href='#about') О нас
         li.menu__item
-          a.menu__link(href='#') Услуги
+          a.menu__link(href='#services') Услуги
         li.menu__item
-          a.menu__link(href='#') Команда
+          a.menu__link(href='#team') Команда
         li.menu__item
-          a.menu__link(href='#') Контакты
-    .footer__inner 
+          a.menu__link(href='#contact') Контакты
+    .footer__inner(data-aos="fade-up" data-aos-delay="200") 
       .footer__about 
         h3.footer__title О нас
         p.footer__text Мы получили множество наград за нашу работу и разработку приложений. Мы стараемся не упускать важные детали в каждой сфере.

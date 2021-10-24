@@ -37,7 +37,7 @@ ymaps.ready(init);
 new Swiper('.team-slider',{
   loop:true,
   
-  slidesPerView: 5,
+  slidesPerView: 1,
   speed: 600,
 	spaceBetween: 30,
 	grabCurcor: true,
@@ -56,4 +56,24 @@ new Swiper('.team-slider',{
     el: '.swiper-pagination',
 		clickable: true,
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+    1360: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    1660: {
+      slidesPerView: 5,
+      spaceBetween: 30
+    }
+  }
  });

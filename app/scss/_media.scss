@@ -5,6 +5,9 @@
     height: 400px;
     right: 30px;
   }
+  .team-slider__images {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width:1360px){
@@ -86,11 +89,17 @@
   .offer{
     padding: 100px 0;
   }
+  .team {
+    padding-top: 100px;
+  }
   .contact {
     padding: 100px 0 40px;
     &__item {
       padding: 0px 15px 0;
     }
+  }
+  .talk {
+    padding: 100px 0;
   }
 }
 
@@ -139,6 +148,16 @@
     &__item{
       max-width: 50%;
       margin-bottom: 30px;
+    }
+  }
+  .footer{
+    &__inner{
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    &__item{
+      margin-bottom: 25px;
+      margin-right: 20px;
     }
   }
 }
@@ -216,6 +235,15 @@
   }
   .map {
     height: 400px;
+  }
+  .talk{
+    &__input {
+      max-width: 100%;
+    }
+    &__text {
+      max-width: 100%;
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -350,6 +378,40 @@
   .map {
     height: 300px;
   }
+  .talk{
+    padding: 40px 0;
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__text {
+      margin-bottom: 20px;
+    }
+  }
+  .talk__input, .talk__textarea {
+    margin-bottom: 15px;
+  } 
+  .footer{
+    &__top {
+      padding-top: 25px;
+      margin-bottom: 30px;
+    }
+    &__inner{
+      margin-bottom: 20px;
+    }
+    &__title{
+      margin-bottom: 12px;
+    }
+  }
+  .team {
+    padding-top: 40px;
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__text {
+      max-width: 100%;
+      margin: 0 auto 30px;
+    }
+  }
 }
 
 
@@ -440,6 +502,41 @@
   }
   .map {
     height: 260px;
+  }
+  .footer{
+    background-image: none;
+    &__inner {
+      margin-bottom: 0;
+    }
+    &__text {
+      margin-bottom: 10px;
+    }
+    &__item {
+      margin-right: 0;
+    }
+    &__services-item {
+      margin-bottom: 5px;
+    }
+    &__bottom {
+      padding: 15px 0;
+    }
+    &__bottom-box,
+    &__bottom-links{
+      display: block;
+    }
+    &__bottom-link {
+      margin-left: 0;
+      display: block;
+    }
+    &__bottom-link,
+    &__bottom-copy{
+      margin-bottom: 7px;
+    }
+  }
+  .team-slider__images,
+  .team-slider__img {
+    max-width: 300px;
+    height: 400px;
   }
 }
 

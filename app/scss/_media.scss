@@ -1,0 +1,492 @@
+
+@media (max-width:1660px){
+  .newsletter__img {
+    width: 450px;
+    height: 400px;
+    right: 30px;
+  }
+}
+
+@media (max-width:1360px){
+  .menu {
+    margin-left: 40px;
+  }
+  .social{
+    left: auto;
+    right: 60px;
+  }
+}
+
+@media (max-width: 1200px){
+  .top__title{
+    color: $gray;
+  }
+  .about{
+    padding: 100px 0;
+    &__inner {
+      flex-direction: column;
+    }
+    &__content {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+    &__text {
+      margin-bottom: 15px;
+    }
+    &__img-two {
+      position: static;
+      width: 445px;
+      height: 360px;
+    }
+    &__images{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+    &__box-number{
+      display: none;
+    }
+    &__list-item {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+  }
+  .about__list{
+    flex-wrap: wrap;
+  }
+  .benefits{
+    padding: 60px 0;
+    &__inner{
+      flex-direction: column;
+    }
+    &__content {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+    &__text {
+      margin-bottom: 15px;
+    }
+  }
+  .dividents{
+    max-width: 100%;
+  }
+  .newsletter__img{
+    display: none;
+  }
+  .newsletter {
+    padding-bottom: 100px;
+  }
+  .services{
+    padding: 0 0 100px;
+  }
+  .services__item {
+    padding: 15px 20px;
+  }
+  .offer{
+    padding: 100px 0;
+  }
+  .contact {
+    padding: 100px 0 40px;
+    &__item {
+      padding: 0px 15px 0;
+    }
+  }
+}
+
+@media (max-width: 992px){
+  .header__inner {
+    padding: 35px;
+  }
+  .top {
+    background-size: cover;
+    background-position: top;
+    &__content::before{
+      display: none;
+    }
+    &__title {
+      font-size: 60px;
+      line-height: 100%;
+      margin-bottom: 25px;
+    }
+  }
+  .consultation {
+    background-position: center;
+    background-size: cover;
+  }
+  .dividents{
+    &__item {
+      &::before,
+      &::after{
+        display: none;
+      }
+    }
+  }
+  .services{
+    &__items{
+      flex-wrap: wrap;
+    }
+    &__item {
+      max-width: 50%;
+      padding: 15px 20px;
+      margin-bottom: 20px;
+    }
+  }
+  .contact{
+    &__items{
+      flex-wrap: wrap;
+    }
+    &__item{
+      max-width: 50%;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+
+@media (max-width:768px){
+  .menu__list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F7F7F7;
+    height: 100vh;
+    transform: translateY(-120%);
+  }
+  .top{
+    &__content{
+      padding-top: 250px;
+    }
+    &__title{
+      font-size: 50px;
+    }
+    &__text {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 40px;
+      max-width: 550px;
+    }
+  }
+  .social{
+    right: 30px;
+    &__item {
+      margin-left: 10px;
+      margin-right: 20px;
+      &::before{
+        display: none;
+      }
+    }
+  }
+  .about__list-item {
+    width: 100%;
+    margin-bottom: 20px;
+    border-left: none;
+  }
+  .about__list-item+.about__list-item{
+    border-left: none;
+  }
+  .consultation__content {
+    padding: 80px 0;
+  }
+  .newsletter__wrapper{
+    padding: 80px 0;
+  }
+  .services{
+    &__title{
+      margin-bottom: 20px;
+    }
+    &__item {
+      max-width: 100%;
+      margin-bottom: 0;
+      text-align: center;
+    }
+    &__img {
+      margin: 0 auto 20px;
+    }
+  }
+  .offer__title {
+    margin-bottom: 30px;
+  }
+  .offer__item{
+    max-width: 100%;
+    margin-right: 0;
+  }
+  .map {
+    height: 400px;
+  }
+}
+
+
+@media (max-width:576px){
+  .title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .header{
+    &__inner {
+      padding: 20px;
+    }
+    &__btn{
+      min-width: 40px;
+      height: 40px;
+    }
+  }
+  .top__title {
+    font-size: 30px;
+  }
+  .social {
+    right: 0;
+    left: 15px;
+    transform: rotate(0deg);
+    bottom: 5%;
+  }
+  .about {
+    padding: 60px 0;
+  }
+  .about__images{
+    flex-direction: column;
+  }
+  .about__img-one,
+  .about__img-two{
+    width: 100%;
+    margin-bottom: 20px;
+    height: 280px;
+  }
+  .about__info {
+    border: 20px solid #F7F7F7;
+  }
+  .about ul.about__list {
+    padding: 40px 0;
+  }
+  .about__title{
+    margin-bottom: 20px;
+  }
+  .about__text {
+    margin-bottom: 5px;
+  }
+  .about__content {
+    margin-bottom: 25px;
+  }
+  .about__images{
+    margin-bottom: 20px;
+  }
+  .about ul.about__list{
+    padding: 20px 0;
+  }
+  .consultation{
+    background-image: none;
+    &__content {
+      padding: 60px 0;
+    }
+    &__title {
+      margin-bottom: 20px;
+    }
+  }
+  .benefits {
+    padding: 40px 0;
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__text {
+      margin-bottom: 5px;
+    }
+  }
+  .offer__title {
+    margin-bottom: 20px;
+  }
+  .dividents{
+    &__img {
+      margin: 0 auto 7px;
+    }
+    &__item {
+      width: 100%;
+      padding: 0;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+  .newsletter{
+    padding-bottom: 40px;
+    &__wrapper{
+      padding: 60px 0;
+    }
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__form{
+      display: block;
+    }
+    &__input {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  } 
+  .services{
+    padding: 0 0 40px;
+  }
+  .offer{
+    padding: 40px 0;
+  }
+  .contact {
+    padding: 40px 0;
+    &__text{
+      margin-bottom: 30px;
+    }
+    &__item{
+      text-align: center;
+      max-width: 100%;
+    }
+    &__img {
+      margin: 0 auto 10px;
+    }
+  }
+  .contact__item+.contact__item{
+    border-left: none;
+  }
+  .map {
+    height: 300px;
+  }
+}
+
+
+@media (max-width:420px){
+  %btn{
+    padding: 8px 24px;
+    font-size: 15px;
+  }
+  .top{
+    z-index: 1;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color: #000000, $alpha: .34);
+      z-index: -1;
+    }
+    &__content {
+      padding-top: 70%;
+    }
+    &__title {
+      font-size: 34px;
+      line-height: 40px;
+      margin-bottom: 15px;
+    }
+    &__text{
+      color: #d9d9d9;
+      margin-bottom: 25px;
+    }
+  }
+  .about{
+    padding: 40px 0;
+    &__list-item {
+      margin-bottom: 10px;
+    }
+    &__list-number {
+      font-size: 30px;
+      line-height: 34px;
+      margin-bottom: 0px;
+      &::before{
+        display: none;
+      }
+    }
+    &__list-text {
+      font-size: 15px;
+      line-height: 15px;
+    }
+  }
+  .dividents__descr {
+    font-size: 17px;
+    line-height: 100%;
+  }
+  .services {
+    &__item{
+      padding: 15px 0px;
+    }
+    &__img {
+      margin: 0 auto 10px;
+    }
+    &__item-title{
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 8px;
+    }
+    &__text {
+      margin-bottom: 10px;
+    }
+  }
+  .offer__item-link{
+    padding: 15px;
+  }
+  .offer__item{
+    margin-bottom: 20px;
+  }
+  .offer__text {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .contact {
+    padding: 40px 0 10px;
+  }
+  .contact__item {
+    margin-bottom: 15px;
+  }
+  .map {
+    height: 260px;
+  }
+}
+
+@media (max-width:340px){
+  .title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .header__btn{
+    padding: 8px 10px;
+    min-width: 30px;
+    height: 30px;
+  }
+  .top{
+    &__title {
+      font-size: 36px;
+      line-height: 110%;
+      margin-bottom: 15px;
+    }
+    &__text {
+      font-size: 17px;
+    }
+  }
+  .consultation__content {
+    padding: 40px 0;
+  }
+  .offer__item-link::before{
+    display: none;
+  }
+  .offer__img {
+    margin-right: 15px;
+  } 
+}
+
+
+@media  (orientation: landscape){
+  .top__content {
+    padding-top: 150px;
+  }
+  .social {
+    right: 30px;
+  }
+  .social__item {
+    margin-left: 10px;
+    margin-right: 20px;
+    &::before{
+      display: none;
+    }
+  }
+}

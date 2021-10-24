@@ -44,7 +44,8 @@ $light-gray: #F7F7F7;
 %btn{
   border: none;
   background-color: $accent;
-  padding: 15px 50px;
+  padding: 12px 50px;
+  display: inline-block;
   color: $white;
   cursor: pointer;
   transition: all .3s linear;

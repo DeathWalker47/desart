@@ -19,7 +19,10 @@ function browsersync() {
 }
 
 function pugs() {
-  return src('app/*.pug')
+  return src([
+    'app/*.pug',
+    'app/**/*.html'
+  ])
     .pipe(pug())
     .pipe(dest('app'))
     .pipe(browserSync.stream()) 

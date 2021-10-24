@@ -30,14 +30,15 @@
   &__form-input{
     position: absolute;
     top: 0;
-    
-    // width: 180px;
+    display: inline-block;
     width: 0;
+    height: 30px;
     visibility: hidden;
-    right: 0;
+    right: 30px;
     border: none;
     padding: 0 10px;
     transition: all .3s linear;
+    border-radius: 0px!important;
 
 
     // transform: translateX(100%);
@@ -45,7 +46,7 @@
       font-size: 12px;
     }
     &--visibile{
-      width: 180px;
+      width: 150px;
       visibility: visible;
     }
   }

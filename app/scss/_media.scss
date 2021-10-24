@@ -625,7 +625,7 @@
 }
 
 
-@media  (orientation: landscape){
+@media (min-width: 550px) and (max-width: 890px) and (orientation: landscape){
   .header__btn {
     padding: 8px 15px;
     min-width: 30px;

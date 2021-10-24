@@ -5,15 +5,16 @@ extends base
 block content
   .wrapper 
     include _header
-    include top
-    include _about
-    include benefits
-    include newsletter
-    include services
-    include offer
-    include team
-    include contact
-    include talk
+    main.main 
+      include top
+      include _about
+      include benefits
+      include newsletter
+      include services
+      include offer
+      include team
+      include contact
+      include talk
     include footer
 
   script(src="https://api-maps.yandex.ru/2.1/?apikey=261b9a65-edba-49ff-845d-999d0e37f0bf&lang=ru_RU")

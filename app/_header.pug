@@ -7,18 +7,20 @@ header.header(data-aos="fade-down")
       img(src="images/logo.png", alt="logo")
     .container.header__container 
       nav.menu
+        button.menu__btn 
+          spam.menu__btn-line 
         ul.menu__list 
-            li.menu__item
-              a.menu__link(href="#home") Главная
-            li.menu__item
-              a.menu__link(href="#about") О нас
-            li.menu__item
-              a.menu__link(href="#services") Услуги
-            li.menu__item
-              a.menu__link(href="#team") Команда
-            li.menu__item
-              a.menu__link(href="#contact") Контакты
-    button.header__btn
+          li.menu__item
+            a.menu__link(href="#about") О нас
+          li.menu__item
+            a.menu__link(href="#services") Услуги
+          li.menu__item
+            a.menu__link(href="#team") Команда
+          li.menu__item
+            a.menu__link(href="#contact") Контакты
+    form.header__form(action="#") 
+      input.header__form-input(type="text" placeholder="Поиск")
+      button.header__btn
 
 
 

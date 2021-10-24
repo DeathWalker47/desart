@@ -9,6 +9,23 @@ $(function(){
       }, 1500);
   });
 
+    $('.menu__btn').on('click', function(){
+    $('.menu__list').toggleClass('menu__list--active');
+    $('body').toggleClass('hidden');
+    });
+
+    $('.menu__link').on('click', function(){
+    $('.menu__list').removeClass('menu__list--active');
+    $('body').removeClass('hidden');
+    });
+
+    $('.header__btn').on('click', function(){
+      $('.header__form-input').toggleClass('header__form-input--visibile');
+      });
+    $('section, .menu__btn').on('click', function(){
+      $('.header__form-input').removeClass('header__form-input--visibile');
+      });
+
 });
 
 AOS.init({

@@ -12,6 +12,9 @@ body{
   background-color: $white;
   position: relative;
 }
+body.hidden{
+  overflow: hidden;
+}
 
 .wrapper{
   display: flex;

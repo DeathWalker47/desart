@@ -18,6 +18,37 @@
   &__container {
     width: 100%;
   }
+  &__form{
+    overflow: hidden;
+    position: relative;
+
+    max-width: 180px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__form-input{
+    position: absolute;
+    top: 0;
+    
+    // width: 180px;
+    width: 0;
+    visibility: hidden;
+    right: 0;
+    border: none;
+    padding: 0 10px;
+    transition: all .3s linear;
+
+
+    // transform: translateX(100%);
+    &::placeholder{
+      font-size: 12px;
+    }
+    &--visibile{
+      width: 180px;
+      visibility: visible;
+    }
+  }
   &__btn{
     padding: 0;
     min-width: 50px;
@@ -25,6 +56,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
     @extend %btn;
     &::before{
       content: '';
@@ -38,6 +70,44 @@
 
 .menu{
   margin-right: auto;
+  &__btn{
+    display: none;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    z-index: 5;
+    overflow: auto;
+    position: relative;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      background-color: $accent;
+      height: 2px;
+      right: 0;
+      transition: all .5s linear;
+      border-radius: 3px;
+    }
+    &::before {
+      top: 4px;
+    }
+
+    &::after {
+      bottom: 5px;
+    }
+  }
+  &__btn-line {
+    width: 25px;
+    height: 2px;
+    background-color: $accent;
+    display: block;
+    opacity: 1;
+    transition: all 1s linear;
+    border-radius: 3px;
+  }
   &__list{
     display: flex;
   }

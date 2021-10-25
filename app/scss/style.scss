@@ -130,10 +130,10 @@
 
 .top{
   min-height: 100vh;
-  // background-image: url('../images/top-bg.jpg');
-  // background-size: auto;
-  // background-position: top right;
-  // background-repeat: no-repeat;
+  background-image: url('../images/top-bg.jpg');
+  background-size: auto;
+  background-position: top right;
+  background-repeat: no-repeat;
   background-color: $light-gray;
   &__video{
     position: absolute;

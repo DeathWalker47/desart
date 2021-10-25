@@ -192,7 +192,9 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background-color: $default;
+      // background-color: $default;
+      background-color: rgba(0,0,0, .6);
+      backdrop-filter: blur(5px);
       height: 100vh;
       transition: all .6s linear;
       transform: translateY(-120%);
@@ -295,7 +297,10 @@
   }
   .header{
     &__inner {
-      padding: 20px;
+      padding: 20px 15px;
+    }
+    &__form-input{
+      height: 40px;
     }
     &__btn{
       min-width: 40px;
@@ -465,6 +470,9 @@
     padding: 8px 24px;
     font-size: 15px;
   }
+  .header__form-input{
+    height: 30px;
+  }
   .header__btn{
     padding: 8px 15px;
     min-width: 30px;
@@ -591,8 +599,12 @@
 }
 
 @media (max-width:340px){
+  .header__form{
+    max-width: 150px;
+  }
   .header__form-input--visibile {
-    width: 160px;
+    width: 120px;
+    padding: 0 5px;
   }
   .title {
     font-size: 25px;

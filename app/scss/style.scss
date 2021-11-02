@@ -663,7 +663,7 @@
     background-color: $light-gray;
     width: 100%;
     padding: 10px 20px;
-    color: $default;
+    color: $title;
     border: none;
     border-right: 2px solid transparent;
     margin-bottom: 20px;
@@ -678,6 +678,23 @@
       line-height: 18px;
     }
   }
+  &__input[contenteditable]{
+    caret-color: red;
+  }
+  //Убираем стандартный фон инпутов при автозаполнении браузером
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0px 10em $light-gray inset !important;
+    -webkit-text-fill-color: $title!important;
+    border-right: 2px solid $light-gray;
+  }
+  input:-webkit-autofill:focus{
+    border-right: 2px solid $accent;
+  }
+
+
   &__input{
     max-width: 365px;
   }
